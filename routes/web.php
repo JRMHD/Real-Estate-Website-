@@ -53,6 +53,20 @@ Route::get('about', function () {
 Route::get('5B+DSQ', function () {
     return view('5B+DSQ');
 });
+Route::get('4B+DSQPLUS', function () {
+    return view('4B+DSQPLUS');
+});
+Route::get('4B+DSQ', function () {
+    return view('4B+DSQ');
+});
+Route::get('3B+DSQPLUS', function () {
+    return view('3B+DSQPLUS');
+});
+Route::get('3B+DSQ', function () {
+    return view('3B+DSQ');
+});
+
+
 // files routes end
 
 Route::get('/dashboard', function () {

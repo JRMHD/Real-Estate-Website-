@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
@@ -95,18 +96,7 @@
                             Experience the perfect blend of elegance and comfort in our exquisite apartments.
                         </p>
 
-                        <form action="#" class="search-location mt-md-5">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 align-items-end">
-                                    <div class="form-group">
-                                        <div class="form-field">
-                                            <input type="text" class="form-control" placeholder="Search location">
-                                            <button><span class="ion-ios-search"></span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        @include('searchform')
                     </div>
                 </div>
             </div>
@@ -250,8 +240,7 @@
         <div style="display: flex; justify-content: center; gap: 30px; padding: 20px;">
             <div
                 style="width: 400px; background-color: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;">
-                <img src="images/elgeyo.jpg" alt="ONLYOU ELGEYO"
-                    style="width: 100%; height: 300px; object-fit: cover;">
+                <img src="images/elgeyo.jpg" alt="ONLYOU ELGEYO" style="width: 100%; height: 300px; object-fit: cover;">
                 <div style="padding: 30px;">
                     <h4 style="color: #D4AF37; font-size: 24px; margin-bottom: 10px;">ONLYOU ELGEYO</h4>
                     <p style="color: #666; font-size: 18px; margin-bottom: 20px;">Elgeyo Road, Kilimani, Nairobi</p>
@@ -315,7 +304,7 @@
 
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2;">
             <h2 style="font-size: 42px; font-weight: 700; text-align: center; margin-bottom: 50px; color: white;">
-                How It Works
+                Onboard With Us
             </h2>
 
 
@@ -332,7 +321,7 @@
                 <div
                     style="flex: 1 1 calc(25% - 30px); min-width: 250px; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div style="font-size: 48px; font-weight: 700; color: #D4AF37; margin-bottom: 20px;">02</div>
-                    <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Meet Your Agent</h3>
+                    <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Meet our Sales team</h3>
                     <p style="font-size: 16px; line-height: 1.6;">Connect with our dedicated agents who will guide you
                         through
                         every step of the process.</p>
@@ -386,15 +375,15 @@
                 <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 py-4 mb-4">
                         <div class="text text-border d-flex align-items-center">
-                            <strong class="number" data-number="305">305</strong>
-                            <span>Area <br>Population</span>
+                            <strong class="number" data-number="43122">43122</strong>
+                            <span>Kilimani <br>Population</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 py-4 mb-4">
                         <div class="text text-border d-flex align-items-center">
-                            <strong class="number" data-number="1090">1090</strong>
+                            <strong class="number" data-number="7">7</strong>
                             <span>Total <br>Properties</span>
                         </div>
                     </div>
@@ -402,19 +391,19 @@
                 <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 py-4 mb-4">
                         <div class="text text-border d-flex align-items-center">
-                            <strong class="number" data-number="209">209</strong>
-                            <span>Average <br>House</span>
+                            <strong class="number" data-number="1600">1600</strong>
+                            <span>Average <br>UNits Developed</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+                {{-- <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 py-4 mb-4">
                         <div class="text d-flex align-items-center">
                             <strong class="number" data-number="67">67</strong>
                             <span>Total <br>Branches</span>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
@@ -424,6 +413,8 @@
     @include('footer')
 
 
+
+    @include('chart')
 
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"

@@ -62,7 +62,7 @@
                             <div class="icon">
                                 <span class="icon-envelope-o"></span>
                             </div>
-                            <p><span>Email:</span> <a href="mailto:bellodenis53@gmail.com">bellodenis53@gmail.com</a>
+                            <p><span>Email:</span> <a href="mailto:Info@onlyounairobi.com">Info@onlyounairobi.com</a>
                             </p>
                         </div>
                     </div>
@@ -108,6 +108,7 @@
     </section>
 
     @include('footer')
+    @include('chart')
 
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"

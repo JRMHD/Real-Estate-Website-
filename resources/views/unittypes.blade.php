@@ -11,7 +11,7 @@
                 <p>Spacious five-bedroom unit with a detached servant quarters.</p>
             </div>
         </div>
-        <div class="unit-card" onclick="location.href='5B+DSQ'">
+        <div class="unit-card" onclick="location.href='4B+DSQPLUS'">
             <div style="height: 350px;">
                 <img src="images/gallery1.jpg" alt="4B+DSQ PLUS">
             </div>
@@ -21,7 +21,7 @@
                 <p>Enhanced four-bedroom unit with extra space and a servant quarters.</p>
             </div>
         </div>
-        <div class="unit-card" onclick="location.href='5B+DSQ'">
+        <div class="unit-card" onclick="location.href='4B+DSQ'">
             <div style="height: 350px;">
                 <img src="images/gallery2.jpg" alt="4B+DSQ">
             </div>
@@ -30,16 +30,16 @@
                 <p>Comfortable four-bedroom unit with a detached servant quarters.</p>
             </div>
         </div>
-        <div class="unit-card" onclick="location.href='5B+DSQ'">
+        <div class="unit-card" onclick="location.href='3B+DSQPLUS'">
             <div style="height: 400px;">
-                <img src="images/gallery3.jpg" alt="3B+DSQ PLUS">
+                <img src="images/gallery3.jpg" alt="3B+DSQPLUS">
             </div>
             <div class="card-content">
                 <h3><i class="fas fa-star" style="margin-right: 0.5rem; font-size: 1.6rem;"></i>3B+DSQ PLUS</h3>
                 <p>Upgraded three-bedroom unit with additional space and a servant quarters.</p>
             </div>
         </div>
-        <div class="unit-card" onclick="location.href='5B+DSQ'">
+        <div class="unit-card" onclick="location.href='3B+DSQ'">
             <div style="height: 400px;">
                 <img src="images/gallery4.jpg" alt="3B+DSQ">
             </div>

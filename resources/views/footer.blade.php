@@ -47,8 +47,8 @@
                         <li><a href="tel:+254705818181"><span class="icon-phone"></span><span class="text">+254 705
                                     818
                                     181</span></a></li>
-                        <li><a href="mailto:bellodenis53@gmail.com"><span
-                                    class="icon-long-arrow-right mr-2"></span>bellodenis53@gmail.com</a></li>
+                        <li><a href="mailto:Info@onlyounairobi.com"><span
+                                    class="icon-long-arrow-right mr-2"></span>Info@onlyounairobi.com</a></li>
                     </ul>
                 </div>
             </div>

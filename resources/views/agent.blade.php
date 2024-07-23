@@ -45,117 +45,148 @@
             </div>
         </div>
     </section>
-    <section class="ftco-section ftco-agent">
+    <section class="ftco-section ftco-agent"
+        style="background-color: #f8f9fa; padding: 60px 0; font-family: 'Arial', sans-serif;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-1.jpg" class="img-fluid" alt="Colorlib Template">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-1.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
                         </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-2.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Mwangi Kamau</a></h3>
+                            <p class="h-info"><span class="position">Sales Manager</span> <span class="details">&mdash;
+                                    8 Properties</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-3.jpg" class="img-fluid" alt="Colorlib Template">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-2.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
                         </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-4.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="position">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Wang Wei</a></h3>
+                            <p class="h-info"><span class="position">Property Consultant</span> <span
+                                    class="details">&mdash; 12 Properties</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-5.jpg" class="img-fluid" alt="Colorlib Template">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-3.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
                         </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-6.jpg" class="img-fluid" alt="Colorlib Template">
-                        </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Achieng Onyango</a></h3>
+                            <p class="h-info"><span class="position">Real Estate Agent</span> <span
+                                    class="details">&mdash; 15 Properties</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-7.jpg" class="img-fluid" alt="Colorlib Template">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-4.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
                         </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Li Na</a></h3>
+                            <p class="h-info"><span class="position">Sales Executive</span> <span
+                                    class="details">&mdash; 9 Properties</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="agent">
-                        <div class="img">
-                            <img src="images/team-8.jpg" class="img-fluid" alt="Colorlib Template">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-5.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
                         </div>
-                        <div class="desc">
-                            <h3><a href="properties.html">James Stallon</a></h3>
-                            <p class="h-info"><span class="position">Listing</span> <span class="details">&mdash; 10
-                                    Properties</span>
-                            </p>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Kibet Kiprono</a></h3>
+                            <p class="h-info"><span class="position">Leasing Manager</span> <span
+                                    class="details">&mdash; 6 Properties</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-6.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Zhang Wei</a></h3>
+                            <p class="h-info"><span class="position">Property Manager</span> <span
+                                    class="details">&mdash; 10 Properties</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-7.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Njeri Wanjiru</a></h3>
+                            <p class="h-info"><span class="position">Marketing Director</span> <span
+                                    class="details">&mdash; 7 Properties</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="agent"
+                        style="background-color: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                        <div class="img" style="position: relative;">
+                            <img src="images/team-8.jpg" class="img-fluid" alt="Agent Image"
+                                style="width: 100%; height: auto;">
+                        </div>
+                        <div class="desc" style="padding: 20px; text-align: center;">
+                            <h3 style="color: #333;"><a href="properties.html"
+                                    style="color: inherit; text-decoration: none;">Chen Long</a></h3>
+                            <p class="h-info"><span class="position">Operations Manager</span> <span
+                                    class="details">&mdash; 11 Properties</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <style>
+        @media (max-width: 768px) {
+            .col-sm-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .mb-4 {
+                margin-bottom: 30px !important;
+            }
+        }
+    </style>
+
     @include('footer')
+    @include('chart')
 
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
