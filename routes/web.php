@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EnquiryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,3 +82,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+
+
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+Route::post('/enquiry', [App\Http\Controllers\EnquiryController::class, 'submit'])->name('enquiry.submit');

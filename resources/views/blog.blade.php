@@ -278,12 +278,24 @@
     @include('footer')
     @include('chart')
 
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+    <div id="ftco-loader" class="show fullscreen"
+        style="display: flex; align-items: center; justify-content: center;">
+        <img src="images/favicon.ico" alt="Loading..."
+            style="width: 64px; height: 64px; animation: rotate 2s linear infinite;">
+    </div>
+
+    <!-- Add the keyframes for rotation -->
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

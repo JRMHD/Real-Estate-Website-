@@ -37,23 +37,41 @@
     <div id="popup"
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 1000; opacity: 0; transition: opacity 0.5s;">
         <div
-            style="background: white; padding: 20px; text-align: center; border-radius: 10px; max-width: 400px; width: 90%; position: relative;">
-            <h1 style="color: #ffc107; margin-bottom: 10px;">Welcome To</h1>
-            <img src="images/preview.png" alt="Preview" style="width: 100%; height: auto; margin-bottom: 20px;">
-
-            <div>
-                <a href="{{ url('/') }}"
-                    style="text-decoration: none; background: #ffc107; color: white; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Go
-                    Home</a>
-                <a href="{{ url('services') }}"
-                    style="text-decoration: none; background: #ffc107; color: white; padding: 10px 20px; border-radius: 5px;">Amenities</a>
+            style="background: white; padding: 20px; text-align: center; border-radius: 15px; max-width: 90%; width: 320px; position: relative; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            <div id="clock"
+                style="margin-bottom: 15px; font-family: 'Arial', sans-serif; background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); padding: 10px; border-radius: 10px; color: white;">
+                <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px;">
+                    Nairobi, Kenya</div>
+                <div id="time" style="font-size: 24px; font-weight: bold; margin-bottom: 3px;"></div>
+                <div id="date" style="font-size: 12px;"></div>
             </div>
+            <a href="{{ url('properties-single') }}"
+                style="display: block; transition: transform 0.3s, box-shadow 0.3s;">
+                <img src="images/pop up onlyou.jpg" alt="Onlyou"
+                    style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            </a>
             <button id="closePopup"
-                style="position: absolute; top: 10px; right: 10px; background: transparent; border: none; color: black; font-size: 24px; cursor: pointer;">&times;</button>
+                style="position: absolute; top: -15px; right: -15px; background: #ff6b6b; border: none; color: white; font-size: 18px; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; transition: background-color 0.3s; display: flex; justify-content: center; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">&times;</button>
         </div>
     </div>
 
     <script>
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            document.getElementById('date').textContent = now.toLocaleDateString('en-US', options);
+            document.getElementById('time').textContent = now.toLocaleTimeString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+        }
+
         // Show popup after 5 seconds
         setTimeout(function() {
             document.getElementById('popup').style.opacity = '1';
@@ -73,6 +91,30 @@
             setTimeout(function() {
                 document.getElementById('popup').style.display = 'none';
             }, 500);
+        });
+
+        // Update clock every second
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to display time immediately
+
+        // Add hover effect
+        const popupImage = document.querySelector('#popup a');
+        popupImage.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.03)';
+            this.querySelector('img').style.boxShadow = '0 6px 20px rgba(0,0,0,0.15)';
+        });
+        popupImage.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+            this.querySelector('img').style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+        });
+
+        // Add hover effect to close button
+        const closeButton = document.getElementById('closePopup');
+        closeButton.addEventListener('mouseenter', function() {
+            this.style.backgroundColor = '#ff8787';
+        });
+        closeButton.addEventListener('mouseleave', function() {
+            this.style.backgroundColor = '#ff6b6b';
         });
     </script>
 
@@ -313,7 +355,8 @@
                     style="flex: 1 1 calc(25% - 30px); min-width: 250px; background: rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div style="font-size: 48px; font-weight: 700; color: #D4AF37; margin-bottom: 20px;">01</div>
                     <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Evaluate Property</h3>
-                    <p style="font-size: 16px; line-height: 1.6;">Walk through a detailed assessment of the property to
+                    <p style="font-size: 16px; color: white; line-height: 1.6;">Walk through a detailed assessment of
+                        the property to
                         understand
                         its true value.</p>
                 </div>
@@ -322,7 +365,8 @@
                     style="flex: 1 1 calc(25% - 30px); min-width: 250px; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div style="font-size: 48px; font-weight: 700; color: #D4AF37; margin-bottom: 20px;">02</div>
                     <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Meet our Sales team</h3>
-                    <p style="font-size: 16px; line-height: 1.6;">Connect with our dedicated agents who will guide you
+                    <p style="font-size: 16px; color: white; line-height: 1.6;">Connect with our dedicated agents who
+                        will guide you
                         through
                         every step of the process.</p>
                 </div>
@@ -331,7 +375,8 @@
                     style="flex: 1 1 calc(25% - 30px); min-width: 250px; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div style="font-size: 48px; font-weight: 700; color: #D4AF37; margin-bottom: 20px;">03</div>
                     <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Close the Deal</h3>
-                    <p style="font-size: 16px; line-height: 1.6;">Negotiate terms and finalize agreements to secure
+                    <p style="font-size: 16px; color: white; line-height: 1.6;">Negotiate terms and finalize agreements
+                        to secure
                         your dream
                         property efficiently.</p>
                 </div>
@@ -340,7 +385,8 @@
                     style="flex: 1 1 calc(25% - 30px); min-width: 250px; background: rgba(255,255,255,0.1); border-radius: 10px; padding: 30px; backdrop-filter: blur(10px); transition: transform 0.3s ease, box-shadow 0.3s ease;">
                     <div style="font-size: 48px; font-weight: 700; color: #D4AF37; margin-bottom: 20px;">04</div>
                     <h3 style="font-size: 24px; color: white; margin-bottom: 15px;">Have Your Property</h3>
-                    <p style="font-size: 16px; line-height: 1.6;">Enjoy the ownership of your new property with
+                    <p style="font-size: 16px; color: white; line-height: 1.6;">Enjoy the ownership of your new
+                        property with
                         confidence and
                         peace of mind.</p>
                 </div>
@@ -416,12 +462,25 @@
 
     @include('chart')
 
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+    <div id="ftco-loader" class="show fullscreen"
+        style="display: flex; align-items: center; justify-content: center;">
+        <img src="images/favicon.ico" alt="Loading..."
+            style="width: 64px; height: 64px; animation: rotate 2s linear infinite;">
+    </div>
+
+    <!-- Add the keyframes for rotation -->
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -458,6 +517,5 @@
         crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/uptown/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Jul 2024 14:01:17 GMT -->
 
 </html>

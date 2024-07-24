@@ -72,18 +72,64 @@
                 <div class="col-md-8 mb-md-5">
                     <h2 class="text-center">If you got any questions <br>please do not hesitate to send us a message
                     </h2>
-                    <form action="#" class="bg-light p-5 contact-form">
+                    <style>
+                        .alert {
+                            padding: 15px;
+                            margin-bottom: 20px;
+                            border: 1px solid transparent;
+                            border-radius: 4px;
+                        }
+
+                        .alert-success {
+                            color: #155724;
+                            background-color: #d4edda;
+                            border-color: #c3e6cb;
+                        }
+
+                        .alert-danger {
+                            color: #721c24;
+                            background-color: #f8d7da;
+                            border-color: #f5c6cb;
+                        }
+
+                        .alert ul {
+                            margin: 0;
+                            padding-left: 20px;
+                        }
+                    </style>
+
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <form action="{{ route('contact.submit') }}" method="POST" class="bg-light p-5 contact-form">
+                        @csrf
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number"
+                                required>
                         </div>
                         <div class="form-group">
-                            <textarea name id cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -110,12 +156,24 @@
     @include('footer')
     @include('chart')
 
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+    <div id="ftco-loader" class="show fullscreen"
+        style="display: flex; align-items: center; justify-content: center;">
+        <img src="images/favicon.ico" alt="Loading..."
+            style="width: 64px; height: 64px; animation: rotate 2s linear infinite;">
+    </div>
+
+    <!-- Add the keyframes for rotation -->
+    <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
