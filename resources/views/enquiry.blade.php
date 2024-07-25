@@ -63,9 +63,9 @@
     </form>
 
 
-    <a href="https://drive.google.com/drive/folders/1OIu_blc0IPvq6_wzDhZhW30YpLqOjYCy"
+    <a href="{{ route('download.brochure') }}"
         style="display: inline-block; padding: 12px 25px; border: 2px solid #c0aa76; border-radius: 30px; color: #c0aa76; text-decoration: none; font-size: 14px; transition: all 0.3s; font-weight: bold;">
-        ↓ DOWNLOAD BROCHURE
+        ↓ DOWNLOAD BROCHURE // COMPANY PROFILE
     </a>
 </div>
 

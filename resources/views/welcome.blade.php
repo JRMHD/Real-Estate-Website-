@@ -28,12 +28,9 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-
+ 
 
 <body>
-
-
-
     <div id="popup"
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; z-index: 1000; opacity: 0; transition: opacity 0.5s;">
         <div
