@@ -140,17 +140,17 @@
                         <div style="display: flex; align-items: center;">
                             <i class="fas fa-home" style="color: #d4af37; margin-right: 10px;"></i>
                             <strong style="color: #000000;">Type:</strong>
-                            <span style="margin-left: auto; color: #333333;">Apartment</span>
+                            <span style="margin-left: auto; color: #333333;">luxury Apartment</span>
                         </div>
                         <div style="display: flex; align-items: center;">
                             <i class="fas fa-door-open" style="color: #d4af37; margin-right: 10px;"></i>
                             <strong style="color: #000000;">Units:</strong>
-                            <span style="margin-left: auto; color: #333333;">255</span>
+                            <span style="margin-left: auto; color: #333333;">120</span>
                         </div>
                         <div style="display: flex; align-items: center;">
                             <i class="fas fa-layer-group" style="color: #d4af37; margin-right: 10px;"></i>
                             <strong style="color: #000000;">Storeys:</strong>
-                            <span style="margin-left: auto; color: #333333;">15</span>
+                            <span style="margin-left: auto; color: #333333;">20</span>
                         </div>
                         <div style="display: flex; align-items: center;">
                             <i class="fas fa-bed" style="color: #d4af37; margin-right: 10px;"></i>
